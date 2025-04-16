@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 20fr 34fr 34fr 20fr;
-    grid-template-rows: 250px 150px 1fr 10fr 1fr;
+    grid-template-rows: 200px 150px 1fr;
     grid-row-gap: 4fr;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,28 +15,34 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,0,0,0.3);
+    background-color: #585858;
 }
+
+header * {
+    font-size: 80px;
+}
+
 nav {
     grid-column: 1 / 5;
     grid-row: 2 / 3;
     background-color: #fff;
     color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,255,0,0.3);
+    background-color: #ffffff;
 }
 
 nav * {
     text-align: center;
     padding: 10px;
     text-decoration: none;
+    font-size: 40px;
     color: black;
 }
 main {
-    height: 600px;
+    min-height: 600px;
     grid-column: 1 / 5;
     grid-row: 3 / 4;
     display: grid;
@@ -45,31 +51,32 @@ main {
     grid-template-rows: 3fr 1fr;
     gap: 20px;
     padding: 20px;
-    background-color: rgba(255,255,0,0.3);
+    background-color: #9f9f9f;
 }
 main img {
     grid-column: 2 / 5;
     grid-row: 1 / 2;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,255,0.3);
 }
 main div{
     grid-column: auto;
     grid-row: 4 / 5;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-row-gap: 10px;
-    background-color: rgba(255,0,0,0.3);
+    background-color: #9f9f9f;
 }
 div#poast1 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: rgba(0,255,0,0.3);
+    min-height: 100px;
+    background-color: #ffffff;
 }
 
 div#poast2 {
     grid-column: 4 / 5; 
     grid-row: 2 / 3;
-    background-color: rgba(0,255,0,0.3);
+    min-height: 100px;
+    background-color: #ffffff;
 }
