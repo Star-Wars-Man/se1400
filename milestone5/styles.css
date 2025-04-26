@@ -127,3 +127,47 @@ main {
         margin-bottom: 20px;
     }
 }
+
+.article-container {
+    max-width: 800px; /* or 600px depending how narrow you want it */
+    margin: 0 auto;   /* this centers it horizontally */
+    background-color: white; /* optional, if you want it to stand out */
+    padding: 20px;
+    border-radius: 10px; /* optional: soft rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* optional: soft shadow */
+    grid-column: 2 / 5;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* centers the articles horizontally */
+    gap: 30px; /* space between each blog post */
+    margin: 40px auto;
+    max-width: 800px; /* how wide you want the blog section */
+    padding: 0 20px; /* some breathing room on small screens */
+}
+
+.blog-post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* make posts fill the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    margin-top: 0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
